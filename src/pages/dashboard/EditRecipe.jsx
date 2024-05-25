@@ -33,12 +33,14 @@ const EditRecipe = () => {
 
     const title = form.title.value;
     const price = form.price.value;
+    const image = form.image.value;
     const category = form.category.value;
     const description = form.description.value;
     const recipeData = {
       id,
       title,
       price,
+      image,
       category,
       description,
     };
@@ -64,6 +66,15 @@ const EditRecipe = () => {
             type="number"
             name="price"
             defaultValue={recipeDetails?.price}
+            className="w-full py-3 px-5 border"
+          />
+        </div>
+        <div className="mb-4">
+          <label htmlFor="">Image </label>
+          <input
+            type="text"
+            name="image"
+            defaultValue={recipeDetails?.image}
             className="w-full py-3 px-5 border"
           />
         </div>
