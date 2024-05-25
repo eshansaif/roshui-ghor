@@ -1,0 +1,182 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Spaghetti Carbonara 2",
+      "price": 12.99,
+      "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+      "image": "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjaXBlfGVufDB8fDB8fHww",
+      "category": "Thai"
+    },
+    {
+      "id": "2",
+      "title": "Chicken Tikka Masala",
+      "price": 15.99,
+      "description": "Grilled chunks of chicken enveloped in a creamy, spiced tomato sauce.",
+      "image": "https://plus.unsplash.com/premium_photo-1671196990669-1bab593b3443?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVjaXBlfGVufDB8fDB8fHww",
+      "category": "Indian"
+    },
+    {
+      "id": "3",
+      "title": "Sushi Platter",
+      "price": 24.99,
+      "description": "A variety of fresh sushi including nigiri, sashimi, and rolls.",
+      "image": "https://plus.unsplash.com/premium_photo-1661587759162-d2dd4934ce33?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVjaXBlfGVufDB8fDB8fHww",
+      "category": "Japanese"
+    },
+    {
+      "id": "4",
+      "title": "Tacos al Pastor",
+      "price": 10.99,
+      "description": "Flavorful marinated pork served on small corn tortillas with pineapple and onions.",
+      "image": "https://images.unsplash.com/photo-1611782721204-464ffeae1f88",
+      "category": "Mexican"
+    },
+    {
+      "id": "5",
+      "title": "Pad Thai",
+      "price": 11.99,
+      "description": "A stir-fried rice noodle dish with shrimp, tofu, peanuts, and tamarind sauce.",
+      "image": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJlY2lwZXxlbnwwfHwwfHx8MA%3D%3D",
+      "category": "Thai"
+    },
+    {
+      "id": "6",
+      "title": "Beef Wellington",
+      "price": 29.99,
+      "description": "Tender beef filet wrapped in puff pastry with duxelles and prosciutto.",
+      "image": "https://images.unsplash.com/photo-1506368083636-6defb67639a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJlY2lwZXxlbnwwfHwwfHx8MA%3D%3D",
+      "category": "British"
+    },
+    {
+      "id": "7",
+      "title": "Falafel Wrap",
+      "price": 8.99,
+      "description": "Crispy falafel balls wrapped in a pita with hummus, tahini, and fresh vegetables.",
+      "image": "https://images.unsplash.com/photo-1573721800644-c28db01820e6",
+      "category": "Middle Eastern"
+    },
+    {
+      "id": "8",
+      "title": "French Onion Soup",
+      "price": 7.99,
+      "description": "A savory soup made with caramelized onions, beef broth, and topped with melted cheese.",
+      "image": "https://images.unsplash.com/photo-1605733131442-7c32e7dcd4c8",
+      "category": "French"
+    },
+    {
+      "id": "9",
+      "title": "Margherita Pizza",
+      "price": 13.99,
+      "description": "Classic pizza topped with fresh tomatoes, mozzarella cheese, and basil.",
+      "image": "https://images.unsplash.com/photo-1585238342024-78c1d6cce409",
+      "category": "Italian"
+    },
+    {
+      "id": "10",
+      "title": "Vegetable Stir Fry",
+      "price": 9.99,
+      "description": "A mix of fresh vegetables stir-fried with soy sauce and served over rice.",
+      "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f",
+      "category": "Chinese"
+    },
+    {
+      "id": "11",
+      "title": "Butter Chicken",
+      "price": 16.99,
+      "description": "Tender chicken cooked in a rich, creamy tomato gravy.",
+      "image": "https://images.unsplash.com/photo-1609991662853-e5ddc27ff05e",
+      "category": "Indian"
+    },
+    {
+      "id": "12",
+      "title": "Rogan Josh",
+      "price": 17.99,
+      "description": "A flavorful lamb curry with a blend of spices and a tomato-based sauce.",
+      "image": "https://images.unsplash.com/photo-1604908812958-cae3b5d02a68",
+      "category": "Indian"
+    },
+    {
+      "id": "13",
+      "title": "Tempura",
+      "price": 14.99,
+      "description": "Lightly battered and deep-fried seafood and vegetables.",
+      "image": "https://images.unsplash.com/photo-1592194996308-7b438aa8b4a1",
+      "category": "Japanese"
+    },
+    {
+      "id": "14",
+      "title": "Ramen",
+      "price": 12.99,
+      "description": "A hearty Japanese noodle soup with meat, vegetables, and broth.",
+      "image": "https://images.unsplash.com/photo-1627308594274-59d426c67e04",
+      "category": "Japanese"
+    },
+    {
+      "id": "147",
+      "title": "test1111",
+      "price": "7878",
+      "category": "Mexican",
+      "description": "test",
+      "image": "https://images.unsplash.com/photo-1604908812958-cae3b5d02a68"
+    },
+    {
+      "id": "121212",
+      "title": "Test 420",
+      "price": "121",
+      "category": "Mexican",
+      "description": "test descittionnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+      "image": "https://images.unsplash.com/photo-1611782721204-464ffeae1f88"
+    },
+    {
+      "id": "601",
+      "title": "Mutton Kachchi Biriyani",
+      "price": "350",
+      "image": "https://foodfusion.com/wp-content/uploads/2019/01/Kachay-Gosht-ki-Biryani-Recipe-by-Food-fusion-2.jpg",
+      "category": "Italian",
+      "description": "Another Biryani Recipe but this one is different. Try Bangladeshi Style Kacchi biryani and make something new this weekend. #HappyCookingToYou"
+    }
+  ],
+  "categories": [
+    {
+      "title": "Italian",
+      "id": "2314"
+    },
+    {
+      "title": "Indian",
+      "id": "8569"
+    },
+    {
+      "title": "Japanese",
+      "id": "5680"
+    },
+    {
+      "title": "Mexican",
+      "id": "e23f"
+    },
+    {
+      "title": "Thai",
+      "id": "970b"
+    },
+    {
+      "title": "British",
+      "id": "b069"
+    },
+    {
+      "title": "Middle Eastern",
+      "id": "b460"
+    },
+    {
+      "title": "French",
+      "id": "8c74"
+    },
+    {
+      "title": "Chinese",
+      "id": "c33b"
+    },
+    {
+      "title": "American",
+      "id": "d05a"
+    }
+  ]
+}
