@@ -13,7 +13,7 @@ export default function RecipeRow({ recipe, setRescipes, recipes }) {
     try {
       await swal({
         title: "Are you sure?",
-        text: "Once deleted, you will not be able to recover this imaginary file!",
+        text: "Once deleted, you will not be able to recover this recipe!",
         icon: "warning",
         buttons: true,
         dangerMode: true,
@@ -22,11 +22,11 @@ export default function RecipeRow({ recipe, setRescipes, recipes }) {
           axios.delete(`http://localhost:3000/recipes/${id}`);
           console.log("Post deleted:", id);
           setRescipes(recipes.filter((r) => r.id !== id));
-          swal("Poof! Your imaginary file has been deleted!", {
+          swal("Poof! Your recipe has been deleted!", {
             icon: "success",
           });
         } else {
-          swal("Your imaginary file is safe!");
+          swal("Your recipe is safe!");
         }
       });
     } catch (error) {
@@ -39,7 +39,13 @@ export default function RecipeRow({ recipe, setRescipes, recipes }) {
       <td>{recipe?.title}</td>
       <td>{recipe?.price}</td>
       <td>{recipe?.category}</td>
-      <td className="flex gap-4">
+      <td className="flex gap-2">
+        <Link
+          to={`/dashboard/recipe-details/${recipe?.id}`}
+          className="btn btn-xs btn-primary"
+        >
+          View
+        </Link>
         <Link
           to={`/dashboard/edit-recipe/${recipe?.id}`}
           className="btn btn-xs btn-neutral"

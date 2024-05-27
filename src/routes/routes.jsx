@@ -12,6 +12,7 @@ import AddRecipe from "../pages/dashboard/AddRecipe";
 import EditRecipe from "../pages/dashboard/EditRecipe";
 import AllRecipes from "../pages/AllRecipes";
 import Contact from "../pages/dashboard/Contact";
+import RecipeDetails from "../pages/dashboard/RecipeDetails";
 
 export const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ export const router = createBrowserRouter([
       {
         path: "edit-recipe/:id",
         element: <EditRecipe />,
+      },
+      {
+        path: "recipe-details/:id",
+        element: <RecipeDetails />,
       },
     ],
   },

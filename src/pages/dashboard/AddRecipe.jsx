@@ -47,15 +47,26 @@ const AddRecipe = () => {
       <form onSubmit={handleCreateRecipe} className="w-full">
         <div className="mb-4">
           <label htmlFor="">Id </label>
-          <input type="text" name="id" className="w-full py-3 px-5 border" />
+          <input
+            required
+            type="text"
+            name="id"
+            className="w-full py-3 px-5 border"
+          />
         </div>
         <div className="mb-4">
           <label htmlFor="">Title </label>
-          <input type="text" name="title" className="w-full py-3 px-5 border" />
+          <input
+            required
+            type="text"
+            name="title"
+            className="w-full py-3 px-5 border"
+          />
         </div>
         <div className="mb-4">
           <label htmlFor="">Price </label>
           <input
+            required
             type="number"
             name="price"
             className="w-full py-3 px-5 border"
@@ -63,7 +74,12 @@ const AddRecipe = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="">Image </label>
-          <input type="text" name="image" className="w-full py-3 px-5 border" />
+          <input
+            required
+            type="text"
+            name="image"
+            className="w-full py-3 px-5 border"
+          />
         </div>
         <div className="mb-4">
           <label htmlFor="">Category </label>
@@ -83,6 +99,7 @@ const AddRecipe = () => {
 
         <div className="mb-4">
           <input
+            required
             type="submit"
             value={"Add Recipe"}
             className="w-full btn py-3 px-5 border btn-neutral"
