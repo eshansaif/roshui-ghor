@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import swal from "sweetalert";
 
 const EditRecipe = () => {
   const { id } = useParams();
@@ -26,7 +27,7 @@ const EditRecipe = () => {
     load();
   }, [id]);
 
-  const handleCreateRecipe = async (e) => {
+  const handleEditRecipe = async (e) => {
     e.preventDefault();
 
     const form = e.target;
@@ -46,11 +47,16 @@ const EditRecipe = () => {
     };
 
     await axios.patch(`http://localhost:3000/recipes/${id}`, recipeData);
+    swal(
+      "Recipe Edited!",
+      `You have updated "${title}" successfully!`,
+      "success"
+    );
   };
   return (
     <div className="w-full px-16">
-      <h1 className="text-4xl mb-4">Add Recipe</h1>
-      <form onSubmit={handleCreateRecipe} className="w-full">
+      <h1 className="text-4xl mb-4">Update Recipe</h1>
+      <form onSubmit={handleEditRecipe} className="w-full">
         <div className="mb-4">
           <label htmlFor="">Title </label>
           <input
@@ -105,7 +111,7 @@ const EditRecipe = () => {
         <div className="mb-4">
           <input
             type="submit"
-            value={"Add Recipe"}
+            value={"Update Recipe"}
             className="w-full btn py-3 px-5 border btn-neutral"
           />
         </div>
