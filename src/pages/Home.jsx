@@ -37,7 +37,7 @@ export default function Home() {
 
       <div className="mx-16">
         <h1 className="text-4xl my-20 text-center">Our Recipe Categories</h1>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
           {categories?.map((category) => (
             <CategoryCard key={category?.id} category={category} />
           ))}

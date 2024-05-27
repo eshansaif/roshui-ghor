@@ -31,7 +31,9 @@ const RecipesByCategory = () => {
 
   return (
     <div className="mx-16 mb-4">
-      <h1 className="text-4xl my-20 text-center">Recipes in {cat} Category</h1>
+      <h1 className="text-4xl my-20 text-center underline">
+        Recipes in {cat} Category
+      </h1>
       <div className="grid md:grid-cols-4 gap-6">
         {recipesByCat.map((recipe) => (
           <RecepiCard key={recipe.id} recipe={recipe} />
