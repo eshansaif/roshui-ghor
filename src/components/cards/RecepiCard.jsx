@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import pizza from "../../assets/pizza.webp";
+// import pizza from "../../assets/pizza.webp";
 
 export default function RecepiCard({ recipe }) {
   return (
