@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import swal from "sweetalert";
 
 const AddRecipe = () => {
   const [categories, setCategories] = useState();
@@ -35,8 +36,10 @@ const AddRecipe = () => {
       category,
       description,
     };
-
     await axios.post("http://localhost:3000/recipes", recipeData);
+    swal("Recipe Added!", `You have added "${title}" successfully!`, "success");
+
+    form.reset();
   };
   return (
     <div className="w-full px-16">

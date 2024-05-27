@@ -6,7 +6,7 @@ export default function Navbar() {
   const [user] = useAuthState(auth);
   const [signOut] = useSignOut(auth);
 
-  console.log(user);
+  // console.log(user);
 
   const handleLogout = async () => {
     await signOut();
@@ -144,20 +144,23 @@ export default function Navbar() {
       ) : (
         <div className="navbar-end flex gap-4">
           <div>
-            <button className="btn" onClick={handleLogout}>
-              Logout
-            </button>
-          </div>
-          <div>
-            <Link to={"/dashboard"} className="btn">
+            <Link to={"/dashboard"} className="btn btn-info">
               Dashboard
             </Link>
           </div>
 
-          <div className="avatar placeholder">
-            <div className="bg-neutral text-neutral-content rounded-full w-8">
+          <div
+            className="avatar placeholder tooltip tooltip-bottom tooltip-primary"
+            data-tip={user?.displayName}
+          >
+            <div className="bg-neutral text-neutral-content rounded-full w-8 ">
               <img src={user?.photoURL} alt="" />
             </div>
+          </div>
+          <div>
+            <button className="btn btn-warning" onClick={handleLogout}>
+              Logout
+            </button>
           </div>
         </div>
       )}
