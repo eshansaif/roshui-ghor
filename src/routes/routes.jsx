@@ -13,6 +13,7 @@ import EditRecipe from "../pages/dashboard/EditRecipe";
 import AllRecipes from "../pages/AllRecipes";
 import Contact from "../pages/dashboard/Contact";
 import RecipeDetails from "../pages/dashboard/RecipeDetails";
+import RecipesByCategory from "../pages/RecipesByCategory";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "category/:cat",
+        element: <RecipesByCategory />,
       },
     ],
   },

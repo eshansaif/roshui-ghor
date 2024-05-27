@@ -6,28 +6,11 @@ const RecipeDetails = () => {
   const { id } = useParams();
 
   const [recipeDetails, setRecipeDetails] = useState();
-  //   const [categories, setCategories] = useState();
 
   console.log(recipeDetails);
 
-  //   const {
-  //     id: r_id,
-  //     title,
-  //     image,
-  //     description,
-  //     category,
-  //     price,
-  //   } = recipeDetails;
-
   useEffect(() => {
     async function load() {
-      //   const categoriesData = await axios.get(
-      //     "http://localhost:3000/categories"
-      //   );
-      //   if (categoriesData?.status === 200) {
-      //     setCategories(categoriesData?.data);
-      //   }
-
       const recipeData = await axios.get(`http://localhost:3000/recipes/${id}`);
       if (recipeData?.status === 200) {
         setRecipeDetails(recipeData?.data);
