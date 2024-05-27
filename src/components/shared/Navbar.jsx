@@ -12,7 +12,7 @@ export default function Navbar() {
     await signOut();
   };
   return (
-    <div className="navbar bg-base-100 sticky top-0 px-16 z-10">
+    <div className="navbar bg-gray-300 sticky top-0 px-16 z-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className=" lg:hidden">
@@ -36,6 +36,19 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
+              <NavLink to="/">
+                {({ isActive }) => (
+                  <span
+                    className={
+                      isActive ? "text-blue-500 font-semibold underline" : ""
+                    }
+                  >
+                    Home
+                  </span>
+                )}
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/all-recipes">
                 {({ isActive }) => (
                   <span
@@ -56,12 +69,28 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <Link to="/" className="text-xl hidden md:block">
+        <Link
+          to="/"
+          className="text-xl hidden md:block text-[#4a00ff] font-extrabold"
+        >
           Roshui Ghor
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex items-center gap-6 px-1">
+          <li>
+            <NavLink to="/">
+              {({ isActive }) => (
+                <span
+                  className={
+                    isActive ? "text-blue-500 font-semibold underline" : ""
+                  }
+                >
+                  Home
+                </span>
+              )}
+            </NavLink>
+          </li>
           <li>
             <NavLink to="/all-recipes">
               {({ isActive }) => (
@@ -105,10 +134,10 @@ export default function Navbar() {
       </div>
       {!user?.email ? (
         <div className="navbar-end flex gap-4">
-          <Link to={"/login"} className="btn">
+          <Link to={"/login"} className="btn btn-success">
             Login
           </Link>
-          <Link to={"/register"} className="btn">
+          <Link to={"/register"} className="btn btn-secondary">
             Registration
           </Link>
         </div>
