@@ -36,10 +36,27 @@ const AddRecipe = () => {
       category,
       description,
     };
-    await axios.post("http://localhost:3000/recipes", recipeData);
-    swal("Recipe Added!", `You have added "${title}" successfully!`, "success");
 
-    form.reset();
+    await swal({
+      title: "Are you sure?",
+      text: "Once added, you will be able to see this in your recipe list!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willAdd) => {
+      if (willAdd) {
+        axios.post("http://localhost:3000/recipes", recipeData);
+        swal("Wow! Your recipe has been added!", {
+          icon: "success",
+        });
+        form.reset();
+      } else {
+        swal("Recipe is not added!");
+      }
+    });
+
+    // await axios.post("http://localhost:3000/recipes", recipeData);
+    // swal("Recipe Added!", `You have added "${title}" successfully!`, "success");
   };
   return (
     <div className="w-full px-16">
