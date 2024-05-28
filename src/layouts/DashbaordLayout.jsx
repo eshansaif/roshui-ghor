@@ -12,13 +12,15 @@ export default function DashbaordLayout() {
     <div className="drawer lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center justify-center">
+        <div className=" mb-4">
+          <label
+            htmlFor="my-drawer-2"
+            className="btn btn-primary drawer-button lg:hidden"
+          >
+            Open drawer
+          </label>
+        </div>
         <Outlet />
-        <label
-          htmlFor="my-drawer-2"
-          className="btn btn-primary drawer-button lg:hidden"
-        >
-          Open drawer
-        </label>
       </div>
       <div className="drawer-side">
         <label
@@ -36,7 +38,9 @@ export default function DashbaordLayout() {
                 {({ isActive }) => (
                   <span
                     className={
-                      isActive ? "text-blue-500 font-semibold underline" : ""
+                      isActive
+                        ? "text-blue-500 font-semibold underline"
+                        : "font-bold"
                     }
                   >
                     Manage All Recipes
@@ -50,7 +54,9 @@ export default function DashbaordLayout() {
                 {({ isActive }) => (
                   <span
                     className={
-                      isActive ? "text-blue-500 font-semibold underline" : ""
+                      isActive
+                        ? "text-blue-500 font-semibold underline"
+                        : "font-bold"
                     }
                   >
                     Add Recipe
