@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import swal from "sweetalert";
+import { v4 as uuidv4 } from "uuid";
 
 const AddRecipe = () => {
   const [categories, setCategories] = useState();
@@ -22,12 +23,15 @@ const AddRecipe = () => {
 
     const form = e.target;
 
-    const id = form.id.value;
+    // const id = form.id.value;
+    const id = uuidv4();
     const title = form.title.value;
     const price = form.price.value;
     const image = form.image.value;
     const category = form.category.value;
     const description = form.description.value;
+    // console.log(id);
+
     const recipeData = {
       id,
       title,
@@ -58,11 +62,12 @@ const AddRecipe = () => {
     // await axios.post("http://localhost:3000/recipes", recipeData);
     // swal("Recipe Added!", `You have added "${title}" successfully!`, "success");
   };
+
   return (
     <div className="w-full px-16">
       <h1 className="text-4xl mb-4">Add Recipe</h1>
       <form onSubmit={handleCreateRecipe} className="w-full">
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <label htmlFor="">Id </label>
           <input
             required
@@ -70,7 +75,7 @@ const AddRecipe = () => {
             name="id"
             className="w-full py-3 px-5 border"
           />
-        </div>
+        </div> */}
         <div className="mb-4">
           <label htmlFor="">Title </label>
           <input

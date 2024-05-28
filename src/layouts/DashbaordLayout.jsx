@@ -32,6 +32,14 @@ export default function DashbaordLayout() {
           {/* Sidebar content here */}
           <div>
             <li>
+              <Link
+                className="text-xl hidden md:block text-[#4a00ff] font-extrabold"
+                to="/"
+              >
+                Roshui Ghor
+              </Link>
+            </li>
+            <li>
               {/* <Link to={"/dashboard/manage-recipes"}>Mangae All Recipes</Link> */}
 
               <NavLink to="/dashboard/manage-recipes">
